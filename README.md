@@ -93,6 +93,9 @@ beyond-baseband/
 |Q1 2027|	Network Slicing	|Slice‑hopping / isolation escape|
 |Q2 2027|	6G (early phase)|	AI‑native baseband poisoning|
 
+## 📊 Updated Cross-Generation Attack Chain (SVG)
+![Cross-Generation Attack Chain](assets/diagrams/cross-generation-chain.svg)
+
 ## 🤝 Contributing
 We welcome contributions in the form of:
 - New attack scenarios based on research or field experience.
@@ -109,4 +112,3 @@ Documentation and narrative content are licensed under CC BY-SA 4.0. PoC code is
 - MITRE FiGHT™ (5G Hierarchy of Threats)
 - Academic references: ConSeT, 5Ghoul, SNI5GECT, and others cited per episode.
 > “Every signal tells a story. Every story hides a vulnerability.” Happy exploring the deepest layers of cellular networks. 🌐
-
