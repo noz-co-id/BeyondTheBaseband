@@ -1,7 +1,7 @@
 # 📡 Beyond The Baseband – Telco Series
 
 > **A serialized technical documentation & cyberattack scenario series on mobile telecommunications infrastructure.**  
-> Each episode uncovers real vulnerabilities hiding beneath the *baseband* layer – from 5G protocols, Open RAN, to future 6G threats – and maps them to the MITRE ATT&CK and MITRE FiGHT frameworks.
+> Each episode uncovers real vulnerabilities hiding beneath the *baseband* layer – from 2G, 3G, 4G LTE, 5G NSA, 5G protocols, Open RAN, to future 6G threats – and maps them to the MITRE ATT&CK and MITRE FiGHT frameworks.
 
 ## 🧠 Philosophy
 
@@ -11,10 +11,10 @@ This philosophy drives a paradigm shift:
 
 | From | To |
 |------|----|
-| Edge security | Deep‑layer security |
+| Edge security | Deep-layer security |
 | Deterministic protocols | Cognitive attack adaptation |
-| Infrastructure‑centric attacks | Semantic & state‑based attacks |
-| Generic threat mapping | Vertical‑specific mapping (FiGHT) |
+| Infrastructure-centric attacks | Semantic & state-based attacks |
+| Generic threat mapping | Vertical-specific mapping (FiGHT) |
 
 This repository is a manifestation of that philosophy: **no layer is too low to audit, no message is too trivial to exploit.**
 
@@ -24,11 +24,11 @@ This repository is a living document that grows with ongoing research. Core acti
 
 | Activity | Description |
 |----------|-------------|
-| 📝 Writing *Telco Series* episodes | Each episode covers one attack vector on telecom protocols (RRC, NAS, GTP, O‑RAN, slicing, etc.) in a narrative + technical style. |
+| 📝 Writing *Telco Series* episodes | Each episode covers one attack vector on telecom protocols (RRC, NAS, GTP, GSM, UMTS, LTE, 5G NSA, O-RAN, slicing, etc.) in a narrative + technical style. |
 | 🗺️ TTP (Tactics, Techniques & Procedures) mapping | Every attack is mapped to MITRE ATT&CK for Mobile and/or MITRE FiGHT (5G). Mapping tables are provided in Markdown and CSV. |
-| 🔬 Real‑research case studies | Scenarios drawn from academic publications (ConSeT, 5Ghoul, SNI5GECT) and independent research. |
-| 🛠️ Proof‑of‑concept / simulation scripts (optional) | Some episodes include Python or GNU Radio code to reproduce attacks in a controlled environment. |
-| 📌 Technology roadmap | A list of upcoming technologies to explore: 5G SA, O‑RAN, 6G, NTN (Non‑Terrestrial Networks). |
+| 🔬 Real-research case studies | Scenarios drawn from academic publications (ConSeT, 5Ghoul, SNI5GECT) and independent research. |
+| 🛠️ Proof-of-concept / simulation scripts (optional) | Some episodes include Python or GNU Radio code to reproduce attacks in a controlled environment. |
+| 📌 Technology roadmap | A list of upcoming technologies to explore: 2G, 3G, 4G LTE, 5G NSA, 5G SA, O-RAN, 6G, NTN (Non-Terrestrial Networks). |
 
 ## 📖 Telco Series Structure
 
@@ -37,7 +37,7 @@ Every episode follows a consistent narrative framework for easy reading and expa
 ```yaml
 Episode: TX-XXX
 Title: "Attack Name"
-Technology: (5G NR / 4G LTE / O‑RAN / 6G)
+Technology: (2G GSM / 3G UMTS / 4G LTE / 5G NSA / 5G NR / O-RAN / 6G)
 Date: YYYY-MM-DD
 Status: (Draft / Review / Final)
 ````
@@ -86,11 +86,12 @@ beyond-baseband/
 
 ## 🧩 Technology Roadmap
 |Quarter	|Technology|	Attack Focus|
+|---------|----------|--------------|
 |Q2 2026|	5G NR (RRC, NAS)|	SNI5GECT, downgrade attack|
 |Q3 2026|	4G LTE (S1AP, GTP)|	IMSI catching via baseband|
 |Q4 2026|	Open RAN (O‑DU, O‑CU)|	Attacks on F1/E1 interfaces|
 |Q1 2027|	Network Slicing	|Slice‑hopping / isolation escape|
-|Q2 2027|	6G (early phase|)	AI‑native baseband poisoning|
+|Q2 2027|	6G (early phase)|	AI‑native baseband poisoning|
 
 ## 🤝 Contributing
 We welcome contributions in the form of:
