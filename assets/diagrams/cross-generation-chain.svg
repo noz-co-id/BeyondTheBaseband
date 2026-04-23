@@ -1,0 +1,55 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box { fill:#0b132b; stroke:#5bc0be; stroke-width:2; rx:10; }
+    .text { fill:#e0fbfc; font-family:monospace; font-size:14px; }
+    .title { fill:#ffffff; font-size:16px; font-weight:bold; }
+    .arrow { stroke:#ffffff; stroke-width:2; marker-end:url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="250" y="30" class="title">Cross-Generation Attack Chain (2G → 5G NSA)</text>
+
+  <!-- 5G NSA -->
+  <rect x="40" y="100" width="140" height="80" class="box"/>
+  <text x="55" y="125" class="text">5G NSA</text>
+  <text x="55" y="145" class="text">NR Signaling</text>
+  <text x="55" y="165" class="text">EN-DC</text>
+
+  <!-- 4G LTE -->
+  <rect x="200" y="100" width="140" height="80" class="box"/>
+  <text x="215" y="125" class="text">4G LTE</text>
+  <text x="215" y="145" class="text">RRC / NAS</text>
+  <text x="215" y="165" class="text">Anchor Layer</text>
+
+  <!-- 3G UMTS -->
+  <rect x="360" y="100" width="140" height="80" class="box"/>
+  <text x="375" y="125" class="text">3G UMTS</text>
+  <text x="375" y="145" class="text">Fallback</text>
+  <text x="375" y="165" class="text">Signaling Abuse</text>
+
+  <!-- 2G GSM -->
+  <rect x="520" y="100" width="140" height="80" class="box"/>
+  <text x="535" y="125" class="text">2G GSM</text>
+  <text x="535" y="145" class="text">No Mutual Auth</text>
+  <text x="535" y="165" class="text">IMSI Exposure</text>
+
+  <!-- Impact -->
+  <rect x="680" y="100" width="160" height="80" class="box"/>
+  <text x="695" y="125" class="text">Impact</text>
+  <text x="695" y="145" class="text">Tracking</text>
+  <text x="695" y="165" class="text">DoS / Control</text>
+
+  <!-- Arrows -->
+  <line x1="180" y1="140" x2="200" y2="140" class="arrow"/>
+  <line x1="340" y1="140" x2="360" y2="140" class="arrow"/>
+  <line x1="500" y1="140" x2="520" y2="140" class="arrow"/>
+  <line x1="660" y1="140" x2="680" y2="140" class="arrow"/>
+
+</svg>
