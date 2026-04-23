@@ -1,4 +1,4 @@
-<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+<svg width="1100" height="300" viewBox="0 0 1100 300" xmlns="http://www.w3.org/2000/svg">
   <style>
     .box { fill:#0b132b; stroke:#5bc0be; stroke-width:2; rx:10; }
     .text { fill:#e0fbfc; font-family:monospace; font-size:14px; }
@@ -14,42 +14,49 @@
   </defs>
 
   <!-- Title -->
-  <text x="250" y="30" class="title">Cross-Generation Attack Chain (2G → 5G NSA)</text>
+  <text x="350" y="30" class="title">Cross-Generation Attack Chain (6G NTN → 2G)</text>
+
+  <!-- 6G NTN -->
+  <rect x="40" y="120" width="150" height="90" class="box"/>
+  <text x="55" y="145" class="text">6G NTN</text>
+  <text x="55" y="165" class="text">Non-Terrestrial</text>
+  <text x="55" y="185" class="text">AI-Native Layer</text>
+
+  <!-- 5G SA -->
+  <rect x="210" y="120" width="150" height="90" class="box"/>
+  <text x="225" y="145" class="text">5G SA</text>
+  <text x="225" y="165" class="text">5G Core (SBA)</text>
+  <text x="225" y="185" class="text">API Surface</text>
 
   <!-- 5G NSA -->
-  <rect x="40" y="100" width="140" height="80" class="box"/>
-  <text x="55" y="125" class="text">5G NSA</text>
-  <text x="55" y="145" class="text">NR Signaling</text>
-  <text x="55" y="165" class="text">EN-DC</text>
+  <rect x="380" y="120" width="150" height="90" class="box"/>
+  <text x="395" y="145" class="text">5G NSA</text>
+  <text x="395" y="165" class="text">NR Signaling</text>
+  <text x="395" y="185" class="text">EN-DC</text>
 
   <!-- 4G LTE -->
-  <rect x="200" y="100" width="140" height="80" class="box"/>
-  <text x="215" y="125" class="text">4G LTE</text>
-  <text x="215" y="145" class="text">RRC / NAS</text>
-  <text x="215" y="165" class="text">Anchor Layer</text>
+  <rect x="550" y="120" width="150" height="90" class="box"/>
+  <text x="565" y="145" class="text">4G LTE</text>
+  <text x="565" y="165" class="text">RRC / NAS</text>
+  <text x="565" y="185" class="text">Anchor Layer</text>
 
   <!-- 3G UMTS -->
-  <rect x="360" y="100" width="140" height="80" class="box"/>
-  <text x="375" y="125" class="text">3G UMTS</text>
-  <text x="375" y="145" class="text">Fallback</text>
-  <text x="375" y="165" class="text">Signaling Abuse</text>
+  <rect x="720" y="120" width="150" height="90" class="box"/>
+  <text x="735" y="145" class="text">3G UMTS</text>
+  <text x="735" y="165" class="text">Fallback</text>
+  <text x="735" y="185" class="text">Signaling Abuse</text>
 
   <!-- 2G GSM -->
-  <rect x="520" y="100" width="140" height="80" class="box"/>
-  <text x="535" y="125" class="text">2G GSM</text>
-  <text x="535" y="145" class="text">No Mutual Auth</text>
-  <text x="535" y="165" class="text">IMSI Exposure</text>
-
-  <!-- Impact -->
-  <rect x="680" y="100" width="160" height="80" class="box"/>
-  <text x="695" y="125" class="text">Impact</text>
-  <text x="695" y="145" class="text">Tracking</text>
-  <text x="695" y="165" class="text">DoS / Control</text>
+  <rect x="890" y="120" width="150" height="90" class="box"/>
+  <text x="905" y="145" class="text">2G GSM</text>
+  <text x="905" y="165" class="text">No Mutual Auth</text>
+  <text x="905" y="185" class="text">IMSI Exposure</text>
 
   <!-- Arrows -->
-  <line x1="180" y1="140" x2="200" y2="140" class="arrow"/>
-  <line x1="340" y1="140" x2="360" y2="140" class="arrow"/>
-  <line x1="500" y1="140" x2="520" y2="140" class="arrow"/>
-  <line x1="660" y1="140" x2="680" y2="140" class="arrow"/>
+  <line x1="190" y1="165" x2="210" y2="165" class="arrow"/>
+  <line x1="360" y1="165" x2="380" y2="165" class="arrow"/>
+  <line x1="530" y1="165" x2="550" y2="165" class="arrow"/>
+  <line x1="700" y1="165" x2="720" y2="165" class="arrow"/>
+  <line x1="870" y1="165" x2="890" y2="165" class="arrow"/>
 
 </svg>
